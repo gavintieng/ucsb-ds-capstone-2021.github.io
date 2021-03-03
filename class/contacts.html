@@ -26,7 +26,7 @@
 
     
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-    <link rel="stylesheet" href="../_static/sphinx-book-theme.40e2e510f6b7d1648584402491bb10fe.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/sphinx-book-theme.37f24b989f4638ff9c27c22dc7559d4f.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
@@ -44,7 +44,7 @@
     <script src="../_static/clipboard.min.js"></script>
     <script src="../_static/copybutton.js"></script>
     <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
-    <script src="../_static/sphinx-book-theme.d31b09fe5c1d09cb49b26a786de4a05d.js"></script>
+    <script src="../_static/sphinx-book-theme.7d483ff0a819d6edff12ce0b1ead3928.js"></script>
     <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
     <script >
         const thebe_selector = ".thebe"
@@ -170,6 +170,26 @@
    <li class="toctree-l2">
     <a class="reference internal" href="../projects/calcofi1/update1.html">
      Update 1
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../projects/calcofi1/update2.html">
+     Update 2 - February 28, 2021
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../projects/calcofi1/update2.html#part-1-exploring-correlations">
+     Part 1: Exploring Correlations
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../projects/calcofi1/update2.html#part-2-exploring-the-effect-of-extreme-weather-events">
+     Part 2: Exploring the Effect of Extreme Weather Events
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../projects/calcofi1/update2.html#conclusion-update-2">
+     Conclusion: Update 2
     </a>
    </li>
   </ul>
@@ -333,21 +353,21 @@
           
 <main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
     
-    <div class="row topbar fixed-top container-xl">
-    <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show">
-    </div>
-    <div class="col pl-2 topbar-main">
-        
-        <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
-            data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
-            aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
-            title="Toggle navigation" data-toggle="tooltip" data-placement="left">
-            <i class="fas fa-bars"></i>
-            <i class="fas fa-arrow-left"></i>
-            <i class="fas fa-arrow-up"></i>
-        </button>
-        
-        
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
 <div class="dropdown-buttons-trigger">
     <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
             class="fas fa-download"></i></button>
@@ -365,7 +385,7 @@
     </div>
 </div>
 
-        <!-- Source interaction buttons -->
+            <!-- Source interaction buttons -->
 
 <div class="dropdown-buttons-trigger">
     <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
@@ -386,19 +406,19 @@
 </div>
 
 
-        <!-- Full screen (wrap in <a> to have style consistency -->
-        <a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
-                data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
-                title="Fullscreen mode"><i
-                    class="fas fa-expand"></i></button></a>
+            <!-- Full screen (wrap in <a> to have style consistency -->
+            <a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+                    data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+                    title="Fullscreen mode"><i
+                        class="fas fa-expand"></i></button></a>
 
-        <!-- Launch buttons -->
+            <!-- Launch buttons -->
 
-    </div>
+        </div>
 
-    <!-- Table of contents -->
-    <div class="d-none d-md-block col-md-2 bd-toc show">
-        
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show">
+            
         <div class="tocsection onthispage pt-5 pb-3">
             <i class="fas fa-list"></i> Contents
         </div>
@@ -418,6 +438,7 @@
 
         </nav>
         
+        </div>
     </div>
 </div>
     <div id="main-content" class="row">
@@ -430,8 +451,8 @@
 <div class="section" id="directory">
 <h2>Directory<a class="headerlink" href="#directory" title="Permalink to this headline">¶</a></h2>
 <div class="tabbed-set docutils">
-<input checked="checked" id="4c0f94ed-8088-4943-a6cf-cf7618badfc0" name="069e2664-2324-48ea-a71b-c962057bca39" type="radio">
-</input><label class="tabbed-label" for="4c0f94ed-8088-4943-a6cf-cf7618badfc0">
+<input checked="checked" id="bd895db7-597d-4eaa-a6fb-cce5e6d85754" name="0c1036d9-0b57-407d-af02-76688a4056f5" type="radio">
+</input><label class="tabbed-label" for="bd895db7-597d-4eaa-a6fb-cce5e6d85754">
 AppFolio</label><div class="tabbed-content docutils">
 <table class="colwidths-auto table">
 <thead>
@@ -476,8 +497,8 @@ AppFolio</label><div class="tabbed-content docutils">
 </tbody>
 </table>
 </div>
-<input id="19c9296a-446b-49b9-85bf-8abc1c35a257" name="069e2664-2324-48ea-a71b-c962057bca39" type="radio">
-</input><label class="tabbed-label" for="19c9296a-446b-49b9-85bf-8abc1c35a257">
+<input id="4aec9c5f-1dc0-4895-a5f0-13b0266b2c37" name="0c1036d9-0b57-407d-af02-76688a4056f5" type="radio">
+</input><label class="tabbed-label" for="4aec9c5f-1dc0-4895-a5f0-13b0266b2c37">
 CalCOFI1</label><div class="tabbed-content docutils">
 <table class="colwidths-auto table">
 <thead>
@@ -522,8 +543,8 @@ CalCOFI1</label><div class="tabbed-content docutils">
 </tbody>
 </table>
 </div>
-<input id="052e4ee4-b1c9-40ab-82a0-4106109eb452" name="069e2664-2324-48ea-a71b-c962057bca39" type="radio">
-</input><label class="tabbed-label" for="052e4ee4-b1c9-40ab-82a0-4106109eb452">
+<input id="009f0234-4e27-4420-b40f-fda9098f8a03" name="0c1036d9-0b57-407d-af02-76688a4056f5" type="radio">
+</input><label class="tabbed-label" for="009f0234-4e27-4420-b40f-fda9098f8a03">
 CalCOFI2</label><div class="tabbed-content docutils">
 <table class="colwidths-auto table">
 <thead>
@@ -560,8 +581,8 @@ CalCOFI2</label><div class="tabbed-content docutils">
 </tbody>
 </table>
 </div>
-<input id="f965a9bb-7f3e-4e7d-afd2-df914b095df8" name="069e2664-2324-48ea-a71b-c962057bca39" type="radio">
-</input><label class="tabbed-label" for="f965a9bb-7f3e-4e7d-afd2-df914b095df8">
+<input id="d851ffde-98b5-4ce5-ae3b-10cf19b89c1d" name="0c1036d9-0b57-407d-af02-76688a4056f5" type="radio">
+</input><label class="tabbed-label" for="d851ffde-98b5-4ce5-ae3b-10cf19b89c1d">
 Carpe Data</label><div class="tabbed-content docutils">
 <table class="colwidths-auto table">
 <thead>
@@ -602,8 +623,8 @@ Carpe Data</label><div class="tabbed-content docutils">
 </tbody>
 </table>
 </div>
-<input id="2d03a983-61b9-47cc-a556-44b0efbb1a69" name="069e2664-2324-48ea-a71b-c962057bca39" type="radio">
-</input><label class="tabbed-label" for="2d03a983-61b9-47cc-a556-44b0efbb1a69">
+<input id="79d2e919-1f0f-49ed-ab6b-efdfa4bfcc9b" name="0c1036d9-0b57-407d-af02-76688a4056f5" type="radio">
+</input><label class="tabbed-label" for="79d2e919-1f0f-49ed-ab6b-efdfa4bfcc9b">
 CCBER</label><div class="tabbed-content docutils">
 <table class="colwidths-auto table">
 <thead>
@@ -652,8 +673,8 @@ CCBER</label><div class="tabbed-content docutils">
 </tbody>
 </table>
 </div>
-<input id="18cc9f08-f747-441e-a200-a4cef1f72577" name="069e2664-2324-48ea-a71b-c962057bca39" type="radio">
-</input><label class="tabbed-label" for="18cc9f08-f747-441e-a200-a4cef1f72577">
+<input id="20c970f4-34ed-48cb-8721-9dec0c6e8ba6" name="0c1036d9-0b57-407d-af02-76688a4056f5" type="radio">
+</input><label class="tabbed-label" for="20c970f4-34ed-48cb-8721-9dec0c6e8ba6">
 CSEP</label><div class="tabbed-content docutils">
 <table class="colwidths-auto table">
 <thead>
@@ -694,8 +715,8 @@ CSEP</label><div class="tabbed-content docutils">
 </tbody>
 </table>
 </div>
-<input id="a31b9727-ba2f-43bb-ae49-38bc8419b6da" name="069e2664-2324-48ea-a71b-c962057bca39" type="radio">
-</input><label class="tabbed-label" for="a31b9727-ba2f-43bb-ae49-38bc8419b6da">
+<input id="384b247e-607e-486d-b55f-98c8ae068bbb" name="0c1036d9-0b57-407d-af02-76688a4056f5" type="radio">
+</input><label class="tabbed-label" for="384b247e-607e-486d-b55f-98c8ae068bbb">
 Evidation</label><div class="tabbed-content docutils">
 <table class="colwidths-auto table">
 <thead>
@@ -736,8 +757,8 @@ Evidation</label><div class="tabbed-content docutils">
 </tbody>
 </table>
 </div>
-<input id="9c08ee5b-e798-4c6a-bc85-4da90bec246e" name="069e2664-2324-48ea-a71b-c962057bca39" type="radio">
-</input><label class="tabbed-label" for="9c08ee5b-e798-4c6a-bc85-4da90bec246e">
+<input id="91226012-b44d-438a-aa3a-37f59d1ad896" name="0c1036d9-0b57-407d-af02-76688a4056f5" type="radio">
+</input><label class="tabbed-label" for="91226012-b44d-438a-aa3a-37f59d1ad896">
 FLIR</label><div class="tabbed-content docutils">
 <table class="colwidths-auto table">
 <thead>
@@ -778,8 +799,8 @@ FLIR</label><div class="tabbed-content docutils">
 </tbody>
 </table>
 </div>
-<input id="49fdf7ba-05b2-49ea-9252-328c55a714c8" name="069e2664-2324-48ea-a71b-c962057bca39" type="radio">
-</input><label class="tabbed-label" for="49fdf7ba-05b2-49ea-9252-328c55a714c8">
+<input id="6cf5b7b9-92d7-44d8-ba37-f9cf3a9dc256" name="0c1036d9-0b57-407d-af02-76688a4056f5" type="radio">
+</input><label class="tabbed-label" for="6cf5b7b9-92d7-44d8-ba37-f9cf3a9dc256">
 Invoca</label><div class="tabbed-content docutils">
 <table class="colwidths-auto table">
 <thead>
@@ -824,8 +845,8 @@ Invoca</label><div class="tabbed-content docutils">
 </tbody>
 </table>
 </div>
-<input id="7b5e07ec-5b3c-45aa-997a-05206895c1ca" name="069e2664-2324-48ea-a71b-c962057bca39" type="radio">
-</input><label class="tabbed-label" for="7b5e07ec-5b3c-45aa-997a-05206895c1ca">
+<input id="9d47b42f-6fa9-40a4-9906-b254e3f29e72" name="0c1036d9-0b57-407d-af02-76688a4056f5" type="radio">
+</input><label class="tabbed-label" for="9d47b42f-6fa9-40a4-9906-b254e3f29e72">
 NCEAS</label><div class="tabbed-content docutils">
 <table class="colwidths-auto table">
 <thead>
@@ -874,8 +895,8 @@ NCEAS</label><div class="tabbed-content docutils">
 </tbody>
 </table>
 </div>
-<input id="d4f1e4e7-d9a1-4e34-aab7-ced37aae86c7" name="069e2664-2324-48ea-a71b-c962057bca39" type="radio">
-</input><label class="tabbed-label" for="d4f1e4e7-d9a1-4e34-aab7-ced37aae86c7">
+<input id="38557bcb-b18d-46f9-bbd5-062c85843c95" name="0c1036d9-0b57-407d-af02-76688a4056f5" type="radio">
+</input><label class="tabbed-label" for="38557bcb-b18d-46f9-bbd5-062c85843c95">
 NRI</label><div class="tabbed-content docutils">
 <table class="colwidths-auto table">
 <thead>
@@ -924,8 +945,8 @@ NRI</label><div class="tabbed-content docutils">
 </tbody>
 </table>
 </div>
-<input id="c52dbf3f-05c7-40a1-aac6-8640ae69edc7" name="069e2664-2324-48ea-a71b-c962057bca39" type="radio">
-</input><label class="tabbed-label" for="c52dbf3f-05c7-40a1-aac6-8640ae69edc7">
+<input id="bb729f3d-cfc7-4cf8-b15b-73426c159788" name="0c1036d9-0b57-407d-af02-76688a4056f5" type="radio">
+</input><label class="tabbed-label" for="bb729f3d-cfc7-4cf8-b15b-73426c159788">
 Sansum</label><div class="tabbed-content docutils">
 <table class="colwidths-auto table">
 <thead>
@@ -1049,15 +1070,15 @@ Sansum</label><div class="tabbed-content docutils">
 
               </div>
               
-        </div>
-    </div>
-    
-    
-    <div class='prev-next-bottom'>
         
+        <div class='prev-next-bottom'>
+            
     <a class='left-prev' id="prev-link" href="syllabus_deliverables.html" title="previous page">Deliverables</a>
     <a class='right-next' id="next-link" href="software-tools.html" title="next page">Software and Tools</a>
 
+        </div>
+        
+        </div>
     </div>
     <footer class="footer mt-5 mt-md-0">
     <div class="container">
